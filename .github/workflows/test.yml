@@ -20,5 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
+        id: totally-random
         with:
-          milliseconds: 1000
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JSON_FILE_PATH: larry.json
+      - run: echo "message -- ${{ steps.totally-random.outputs.message }}"
