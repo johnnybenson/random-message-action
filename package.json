@@ -1,6 +1,6 @@
 {
   "name": "random-message-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Github Action to provide a random message to other actions",
   "main": "lib/main.js",
   "scripts": {
