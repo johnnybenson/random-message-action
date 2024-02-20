@@ -1,6 +1,6 @@
 {
   "name": "random-message-action",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Github Action to provide a random message to other actions",
   "main": "lib/main.js",
   "scripts": {
@@ -31,13 +31,15 @@
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.6",
-    "@typescript-eslint/parser": "^6.19.1",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
     "@vercel/ncc": "^0.38.1",
     "eslint": "^8.56.0",
     "eslint-plugin-github": "^4.10.1",
+    "eslint-plugin-prettier": "^5.1.3",
     "js-yaml": "^4.1.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   }
 }
