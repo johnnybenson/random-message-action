@@ -7,7 +7,7 @@
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
-    "lint": "eslint src/**/*.ts",
+    "lint": "oxlint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
     "all": "npm run build && npm run format && npm run lint && npm run package"
   },
@@ -32,13 +32,9 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
-    "@typescript-eslint/eslint-plugin": "^8.43.0",
-    "@typescript-eslint/parser": "^8.43.0",
     "@vercel/ncc": "^0.38.3",
-    "eslint": "^9.35.0",
-    "eslint-plugin-github": "^6.0.0",
-    "eslint-plugin-prettier": "^5.5.4",
     "js-yaml": "^4.1.0",
+    "oxlint": "^1.14.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   }
