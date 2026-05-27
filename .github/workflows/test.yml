@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
       - run: |
-          npm install
+          bun install --frozen-lockfile
       - run: |
-          npm run all
+          bun run all
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
